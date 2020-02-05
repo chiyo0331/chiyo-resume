@@ -64,20 +64,23 @@ header.masthead .intro-text a {
 
 #section-1 .container h1 {
     text-align: center;
-    margin: 50px auto;
+    margin: 10px 0 25px;
     text-transform: uppercase!important;
 }
 
 #section-1 .container .col-xl-6 {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+#section-1 #tex1 {
+    flex-direction: column;
 }
 
 #section-1 #text1-right .row .col-12 p {
     line-height: 30px;
     font-family: "微軟正黑體", fantasy;
-    font-size: 18px;
+    font-size: 1rem;
     color: #424242;
     padding: 5px;
 }
@@ -105,7 +108,7 @@ header.masthead .intro-text a {
 }
 
 #section-1 #text1-right .col-12 p {
-    margin: 50px auto;
+    margin: 0 0 25px;
 }
 
 #section-1 #text1-right .col-12#circle {
@@ -157,7 +160,6 @@ header.masthead .intro-text a {
 
 #section-2 {
     background-color: #202121;
-    margin-top: 100px;
 }
 
 #section-2 #text2-left {
@@ -180,6 +182,12 @@ header.masthead .intro-text a {
 #section-2 #text2-right .col-12 h1 {
     text-align: center;
     text-transform: uppercase!important;
+    margin: 10px 0 25px;
+}
+
+#section-2 p {
+    margin: 0 0 25px;
+    font-size: 1rem;
 }
 
 #section-2 #text2-right .progress {
@@ -191,8 +199,8 @@ header.masthead .intro-text a {
     margin: 10px 0 5px 0;
 }
 
-#section-3 {
-    margin-top: 30px;
+#section-3 h1 {
+    margin: 10px 0 25px;
 }
 
 #section-3 .col-sm-12 {
@@ -293,7 +301,7 @@ header.masthead .intro-text a {
 }
 
 #section-4 .row .col-sm-12 h1 {
-    margin: 20px auto;
+    margin: 10px 0 25px;
     text-align: center;
     text-transform: uppercase!important;
 }
@@ -384,6 +392,10 @@ footer .container .row hr {
     padding: 3px;
 }
 
+img[ src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     #myNavbar {
         padding: 0;
@@ -392,12 +404,12 @@ footer .container .row hr {
         background-color: #242424;
         text-align: center;
     }
+    #section-1 #tex1 {
+        margin: 30px 0 0;
+    }
 }
 
 @media (max-width: 767px) {
-    #section-2 #text2-right .col-12 h1 {
-        margin: 30px auto;
-    }
     #section-4 {
         height: auto;
     }
@@ -428,7 +440,6 @@ footer .container .row hr {
     }
     footer .col-sm-12 ul {
         padding: 0;
-        font-size: 24px;
     }
     #section-4 #text4-right .row .col-sm-12 i.fa.fa-map-marker span {
         position: relative;
